@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Tipografías -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d1841b7b9.js" crossorigin="anonymous"></script>
+    <title>Ricomida</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <!-- Navbar --> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand texto-logo" href="#">Ricomida</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link text-white" href="#">Inicio</a>
+            <a class="nav-item nav-link text-white" href="#">Recetas</a>
+            <a class="nav-item nav-link text-white" href="#">Nosotros</a>
+            <a class="nav-item nav-link text-white" href="#">Contacto</a>            
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+      <!-- Imagen a la izq, título a la derecha, seguido de un borde y más texto.-->
+    <section class="hero container my-2 py-3">
+      <div class="border-dark border-top mb-3 d-md-none"></div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <img src="assets/img/principal.jpg" alt="Pizza" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <h1 class="py-5 font-weight-bold border-bottom border-dark mb-3">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h1>
+          <h2 class="font-weight-bold tiempo-porciones mb-4">110 MIN / 6 A 8 PORCIONES</h2>
+          <!-- buscar tooltip en bs e implementar en un js -->
+          <button type="button" class="btn btn-light border rounded" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Presiona para enviar a tu correo">Enviar por correo</button>
+          <button type="button" class="btn btn-light border rounded" data-toggle="popover" data-placement="right" data-trigger="hover" title="Agrega esta receta a tus favoritos">Añadir a favoritos</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carrusel -->
+    <section class="container py-5 border-bottom border-dark d-none d-sm-none d-md-block d-lg-block">
+      <div id="carrusel" class="carousel slide text-dark" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carrusel" data-slide-to="0" class="active bg-dark"></li>
+          <li data-target="#carrusel" data-slide-to="1" class="bg-dark"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="assets/img/slider-1.png" alt="Champiñones" class="img-fluid">
+              </div>
+              <div class="col-md-3">
+                <img src="assets/img/slider-2.png" alt="Pizza en horno" class="img-fluid">
+              </div>
+              <div class="col-md-3">
+                <img src="assets/img/slider-3.png" alt="Masa" class="img-fluid">
+              </div>
+              <div class="col-md-3">
+                <img src="assets/img/slider-4.png" alt="Haciendo una pizza" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item text-dark">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="assets/img/slider-5.png" alt="Pizza dividida" class="img-fluid">
+              </div>
+              <div class="col-md-3">
+                <img src="assets/img/slider-6.png" alt="Pizza Crust" class="img-fluid">
+              </div>
+              <div class="col-md-3">
+                <img src="assets/img/slider-7.png" alt="Pizza close-up" class="img-fluid">
+              </div>
+              <div class="col-md-3">
+                <img src="assets/img/slider-8.png" alt="Pizza e ingredientes" class="img-fluid">
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 2 columnas: Ingredientes y Preparación (tiene border bottom) -->
+    <section class="contenido container mt-2 mb-5 pt-3 pb-md-5">
+      <div class="row">
+        <div class="col-sm-12 col-md-6  mb-5">
+          <h2 class="border-bottom border-dark d-inline-block pb-2 font-weight-bold mb-4">INGREDIENTES</h2>
+          <h3 class="mb-4 font-weight-bold">Masa</h3>
+          <ul class="lista-sin-adornos">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+          <h3 class="py-4 font-weight-bold">Salsa</h3>
+          <ul class="lista-sin-adornos">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+          <h3 class="py-4 font-weight-bold">Relleno</h3>
+          <ul class="lista-sin-adornos">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <h2 class="border-bottom border-dark d-inline-block pb-2 font-weight-bold mb-4">
+            PREPARACIÓN</h2>
+          <div class="mt-5">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quas pariatur tempora error animi commodi quia, asperiores esse blanditiis nemo reprehenderit, dignissimos aliquam quidem id iste tempore architecto autem. Facere?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quas pariatur tempora error animi commodi quia, asperiores esse blanditiis nemo reprehenderit, dignissimos aliquam quidem id iste tempore architecto autem. Facere?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quas pariatur tempora error animi commodi quia, asperiores esse blanditiis nemo reprehenderit, dignissimos aliquam quidem id iste tempore architecto autem. Facere?</p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recetas relacionadas -->
+    <section class="recetas container mb-5">
+      <h2 class="text-center pt-4 pb-5 border-top border-dark font-weight-bold">RECETAS RELACIONADAS</h2>
+      <div class="card-deck pb-5">
+        <div class="card">
+          <img src="assets/img/recipe-card-1.png" class="card-img-top" alt="Ricos panqueques con manjar y crema">
+          <div class="card-body">
+            <h5 class="card-title">PANQUEQUES CON MANJAR Y CREMA</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quasi nostrum corporis quae sint sit autem ut non, consequuntur nam inventore pariatur facere esse soluta culpa eligendi, voluptate doloremque suscipit?</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/recipe-card-2.png" class="card-img-top" alt="Delicioso tiramisú">
+          <div class="card-body">
+            <h5 class="card-title">TIRAMISÚ</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem doloremque, quos corrupti ab quia repellendus dolor, qui similique et eveniet, illum ratione quidem! Velit doloremque quod praesentium repellat aliquam et?</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/recipe-card-3.png" class="card-img-top" alt="Jugosa Plateada">
+          <div class="card-body">
+            <h5 class="card-title">PLATEADA</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo beatae debitis, sed eum temporibus assumenda culpa atque itaque inventore at? Excepturi unde voluptatem similique sequi quibusdam, laboriosam accusamus quos quam!.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="text-center bg-danger text-white newsletter">
+      <p class="mayusc font-weight-bold pt-5 texto-suscribete">SUSCRÍBETE EN NUESTRO NEWSLETTER</p>
+      <p class="mb-5 texto-mejores-recetas">y obtén las mejores recetas que tenemos en <span class="texto-logo">Ricomida</span></p>
+      <button type="button" class="btn btn-outline-light ancho-boton">Empezar</button>
+    </section>
+    <!-- Footer -->
+    <footer class="text-center bg-dark text-white p-5">
+      <p class="texto-logo text-center">Ricomida</p>
+    </footer>
+
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Mi Js-->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

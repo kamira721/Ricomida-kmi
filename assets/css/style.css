@@ -1,0 +1,55 @@
+body{
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+}
+.texto-logo{
+    font-family: 'Lobster', cursive;
+}
+a.texto-logo, footer .texto-logo{
+    font-size: 2.3125em
+}
+.tiempo-porciones{
+    font-size: 1.25em;
+}
+.contenido h2, .contenido h3{
+    font-size: 1.25rem;
+}
+.lista-sin-adornos{
+    list-style-type: none;
+}
+ul, ol{
+    margin: 0;
+    padding: 0;
+}
+.recetas h2{
+    font-size: 2.5rem;
+}
+.newsletter{
+    padding: 12% 12% 15% 12%;
+    font-size: 1.25rem;
+}
+.mayusc{
+    font-size: 1.875rem;
+}
+.ancho-boton{
+    padding: 1% 10%;
+    min-width: 233px;
+}
+.carousel-indicators {
+    top: 100%;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/*Ejemplo de Media Query para condicionar que estas instrucciones se apliquen desde 768px en adelante*/
+@media only screen and (min-width: 768px){
+    .newsletter{
+        font-size: 1.875rem;
+    }
+    .mayusc{
+        font-size: 2.5rem;
+    }
+}
